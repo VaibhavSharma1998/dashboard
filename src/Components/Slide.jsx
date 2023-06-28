@@ -46,7 +46,7 @@ const Slide = ({ children }) => {
             {/* container div */}
             <div className="flex">
                 {/* Slider  div*/}
-                <div className={`bg-[#fff] ${slideWidth} text-black h-screen`}>
+                <div className={`bg-[#fff] ${slideWidth} text-black  h-screen transition-all duration-500 `}>
                     <div className="flex items-center py-6 px-4">
                         <h1 className={`pr-24 text-2xl ${logoDisplay}`}>Logo</h1>
                         
@@ -67,7 +67,7 @@ const Slide = ({ children }) => {
 
                 </div>
                     {/* Main */}
-                <main className='w-full p-5 flex bg-[#f7f7f8]'>{children}</main>
+                <main className='w-full p-5 flex bg-[#f7f7f8] text-3xl'>{children}</main>
 
             </div>
         </>
